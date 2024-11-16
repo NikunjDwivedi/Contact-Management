@@ -4,25 +4,25 @@ const router = express.Router();
 
 
 router.post('/', async (req, res) => {
-    console.log("Request Body:", req.body); // Log request body
-    try {
-      const { firstName, lastName, email, phone, company, jobTitle } = req.body;
-  
-      if (!firstName || !lastName || !email || !phone) {
-        return res.status(400).json({ message: 'All required fields must be filled' });
-      }
-  
-      const newContact = new Contact({ firstName, lastName, email, phone, company, jobTitle });
-      await newContact.save();
-      console.log("New Contact Saved:", newContact); // Log saved contact
-  
-      res.status(201).json({ message: 'Contact added successfully', contact: newContact });
-    } catch (error) {
-      console.error("Error adding contact:", error); // Log error details
-      res.status(500).json({ message: 'Error adding contact', error: error.message });
+  console.log("Request Body:", req.body); // Log request body
+  try {
+    const { firstName, lastName, email, phone, company, jobTitle } = req.body;
+
+    if (!firstName || !lastName || !email || !phone) {
+      return res.status(400).json({ message: 'All required fields must be filled' });
     }
-  });
-  
+
+    const newContact = new Contact({ firstName, lastName, email, phone, company, jobTitle });
+    await newContact.save();
+    console.log("New Contact Saved:", newContact); // Log saved contact
+
+    res.status(201).json({ message: 'Contact added successfully', contact: newContact });
+  } catch (error) {
+    console.error("Error adding contact:", error); // Log error details
+    res.status(500).json({ message: 'Error adding contact', error: error.message });
+  }
+});
+
 router.get('/', async (req, res) => {
   try {
     const page = parseInt(req.query.page) || 1;
