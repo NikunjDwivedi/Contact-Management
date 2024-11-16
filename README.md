@@ -1,7 +1,5 @@
 # Contact Management Application
 
-## Project link: 
-
 ## Project Description
 
 The Contact Management App is a full-stack web application designed to help users manage their contacts efficiently. The application allows users to add, view, and store contact information such as name, email, phone number, company, and job title.
