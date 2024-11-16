@@ -1,0 +1,15 @@
+# .gitignore file in the root directory
+
+# Node.js dependencies
+node_modules/
+frontend/node_modules/
+
+# Build output
+frontend/build/
+
+# IDE config files (if any)
+.vscode/
+.idea/
+
+# Other OS-specific files (MacOS example)
+.DS_Store
