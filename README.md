@@ -49,18 +49,8 @@ The Contact Management App is a full-stack web application designed to help user
     cd ../frontend
     npm install
     ```
-
-3. **MongoDB Setup**:
-    - Set up your MongoDB Atlas cluster and create a database called `contacts`.
-    - Obtain your MongoDB connection URI and replace the default connection string in the `backend/server.js` file with your own.
-
-    Example:
-
-    ```js
-    const mongoURI = process.env.MONGO_URI || 'mongodb+srv://username:password@cluster.mongodb.net/contacts?retryWrites=true&w=majority';
-    ```
-
-4. **Build the React App**:
+    
+3. **Build the React App**:
     - In the `frontend` directory, run:
 
     ```bash
@@ -69,7 +59,7 @@ The Contact Management App is a full-stack web application designed to help user
 
     This will generate the optimized production build.
 
-5. **Start the Server**:
+4. **Start the Server**:
     - Navigate to the `backend` directory and run the server:
 
     ```bash
@@ -79,7 +69,7 @@ The Contact Management App is a full-stack web application designed to help user
 
     The backend should now be running on `http://localhost:5000`.
 
-6. **Run the Frontend**:
+5. **Run the Frontend**:
     - In the `frontend` directory, start the React development server:
 
     ```bash
