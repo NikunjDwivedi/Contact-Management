@@ -8,7 +8,6 @@ The Contact Management App is a full-stack web application designed to help user
 - **Frontend**: ReactJS with Material-UI for the user interface.
 - **Backend**: Node.js with Express for the API and MongoDB as the database.
 - **Database**: MongoDB (cloud-based, MongoDB Atlas).
-- **Deployment**: Render.com for deploying the frontend and backend together.
 
 ## Features:
 - **Add Contact**: Users can add new contacts with details like name, email, phone number, etc.
@@ -152,7 +151,6 @@ module.exports = Contact;
 ```js
 app.use(express.static(path.join(__dirname, 'client/build')));
 ```
-
 
 ### Challenge 2: **MongoDB Connection Issues**
 
