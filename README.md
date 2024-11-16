@@ -31,7 +31,7 @@ The Contact Management App is a full-stack web application designed to help user
 1. **Clone the Repository**: Clone this repository to your local machine using Git:
 
     ```bash
-    git clone https://github.com/your-repo/contact-management.git
+    git clone https://github.com/NikunjDwivedi/Contact-Management.git
     cd contact-management
     ```
 
